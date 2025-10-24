@@ -50,7 +50,7 @@ __Explore [PlatformaticHQ.com](https://www.platformatichq.com/) to find out more
 
 ## 📚 Useful resources
 
-- [Quick Start guide](https://docs.platformatic.dev/docs/getting-started/quick-start-guide)
+- [Quick Start guide](https://docs.platformatic.dev/docs/getting-started/quick-start)
 - [Beginner tutorial: Build a Todo API with Platformatic DB](https://docs.platformatic.dev/docs/learn/beginner/crud-application)
 - [Advanced guides](https://docs.platformatic.dev/docs/guides/movie-quotes-app-tutorial)
 - [Masterclasses](https://www.youtube.com/playlist?list=PL_x4nRdxj60K2j9l_SflmqmaTA2XVBuqc)
