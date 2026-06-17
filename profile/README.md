@@ -1,57 +1,58 @@
-# Hi 👋 Welcome to the Platformatic community!
+# Hi 👋 Welcome to Platformatic!
 
-<div>
-Platformatic’s Open Source toolkit helps you build modern Node.js applications without the endless loop of setup and maintenance. 
+We build open source tools that change how teams run Node.js in production. Keep the frameworks you already use, run them faster, and operate them at scale without a rewrite.
 
-Break free from repetitive tasks, accelerate deployments and improve your Node.js development experience with our:
+## ⚡ Watt — the Node.js Application Server
 
-- Opinionated structures and composable templates
-- Batteries-included API setup
-- Out-of-the-box documentation, logs and metrics
-- Shareable and reusable configurations
-</div>
+[**Watt**](https://github.com/platformatic/platformatic) takes any Node.js application, written in any framework, and runs it as a worker thread so you can ship faster and scale smarter in any containerized environment.
 
-## Platformatic for Teams
+- **Use the whole machine, not one core.** Run your frontend, APIs, and AI agents as individually scalable threads in a single runtime. Up to 2-3x the throughput on the same hardware.
+- **Bring your stack.** Next.js, Astro, Remix, NestJS, Express, Fastify, and plain Node.js run as they are. No proprietary framework, no migration.
+- **Call services by name.** Inter-thread calls skip the network stack, so frequently co-located services (BFFs, microfrontends) stop paying for HTTP between themselves.
+- **Observability on by default.** Structured logs, Prometheus metrics, OpenTelemetry traces, health checks, and CPU/memory flame graphs, all out of the box.
+- **Self-healing at scale.** Watt heals and scales worker threads in seconds, keeping latency low even at p95 and above.
 
-<div> Node.js promises speed, agility, and scalability. In practice however, doing Node right has been a challenge for engineering teams, costing their companies cloud spend, downtime, and time-to-market. </div>
+```bash
+npx wattpm create
+```
 
-<p> Time and time again, we’ve seen companies stumble when dealing with the same 5 issues: </p>
+## 🧠 Intelligent Command Center (ICC)
 
-- Scaling based on CPU and memory.
-- Preview environment limitations
-- Getting the right Node.js metrics
-- Not knowing what will break or which teams you’ll impact when deploying APIs
-- Figuring out which logger is right for you
+[**ICC**](https://github.com/platformatic/intelligent-command-center) is the open source control plane for running Watt at scale. It's how you operate a fleet across Kubernetes and ECS from one place.
 
-**Platformatic’s Command Center solves Node.js for enterprise teams.**
+- **Predictive autoscaling** that scales ahead of the spike instead of reacting after it, recovering a large share of typical over-provisioning.
+- **Signals that actually predict saturation** — Event Loop Utilization and heap usage, not just CPU.
+- **Distributed HTTP and Next.js caching** with tag-based invalidation coordinated across the fleet.
+- **Performance profiling, flame graphs, and audit logging** for every workload.
 
-Bring your legacy Node.js applications. Improve performance, eliminate downtime, and cut development costs without a rewrite—in one unified platform.
+Watt fills the pod. ICC counts the pods. Vertical efficiency meets horizontal prediction.
 
-![Platformatic Command Center Solutions](./Hompage_Solution_White.png)
+## 🦊 @platformatic/kafka
 
+[**@platformatic/kafka**](https://github.com/platformatic/kafka) is a modern, high-performance Apache Kafka client written entirely in TypeScript, with no native dependencies.
 
-The Command Center allows you to:
-
-- Streamline your deployment process
-- Minimize downtime and increase reliability
-- Manage your Node applications in one place
-- Intelligently autoscale based on Node performance metrics
-
-<div align="center">
-
-__Explore [PlatformaticHQ.com](https://www.platformatichq.com/) to find out more about the Command Center.__
-
-</div>
+- Optimized to minimize event loop overhead.
+- Streaming, callback, and promise-based consumption.
+- Pluggable serialization plus Confluent Schema Registry support (AVRO, Protobuf, JSON Schema).
+- Supports Apache Kafka 3.5.0 through 4.2.0.
 
 ## 👬 Community
 
-- [Discord channel](https://discord.com/channels/1011258196905689118/1011258204371554307) for feedback, queries, learning resources and masterclasses
-- [Contributor code of conduct](https://github.com/platformatic/.github/blob/main/CODE_OF_CONDUCT.md) 
+- [Discord](https://discord.com/channels/1011258196905689118/1011258204371554307) for feedback, questions, learning resources, and masterclasses
+- [Contributor code of conduct](https://github.com/platformatic/.github/blob/main/CODE_OF_CONDUCT.md)
 
 ## 📚 Useful resources
 
+- [Documentation](https://docs.platformatic.dev)
 - [Quick Start guide](https://docs.platformatic.dev/docs/getting-started/quick-start)
-- [Beginner tutorial: Build a Todo API with Platformatic DB](https://docs.platformatic.dev/docs/learn/beginner/crud-application)
-- [Advanced guides](https://docs.platformatic.dev/docs/guides/movie-quotes-app-tutorial)
-- [Masterclasses](https://www.youtube.com/playlist?list=PL_x4nRdxj60K2j9l_SflmqmaTA2XVBuqc)
 - [Blog](https://blog.platformatic.dev)
+- [Masterclasses](https://www.youtube.com/playlist?list=PL_x4nRdxj60K2j9l_SflmqmaTA2XVBuqc)
+- [Benchmarks & reports](https://www.platformatichq.com/)
+
+---
+
+<div align="center">
+
+*Fastify™ & Node.js® are trademarks of the OpenJS Foundation.*
+
+</div>
