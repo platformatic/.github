@@ -18,7 +18,7 @@ npx wattpm create
 
 ## 🧠 Intelligent Command Center (ICC)
 
-[**ICC**](https://github.com/platformatic/intelligent-command-center) is the open source control plane for running Watt at scale. It's how you operate a fleet across Kubernetes and ECS from one place.
+[**ICC**](https://github.com/platformatic/intelligent-command-center) is the control plane for running Watt at scale. It's how you operate a fleet across Kubernetes and ECS from one place.
 
 - **Predictive autoscaling** that scales ahead of the spike instead of reacting after it, recovering a large share of typical over-provisioning.
 - **Signals that actually predict saturation** — Event Loop Utilization and heap usage, not just CPU.
