@@ -38,7 +38,6 @@ Watt fills the pod. ICC counts the pods. Vertical efficiency meets horizontal pr
 
 ## 👬 Community
 
-- [Discord](https://discord.com/channels/1011258196905689118/1011258204371554307) for feedback, questions, learning resources, and masterclasses
 - [Contributor code of conduct](https://github.com/platformatic/.github/blob/main/CODE_OF_CONDUCT.md)
 
 ## 📚 Useful resources
